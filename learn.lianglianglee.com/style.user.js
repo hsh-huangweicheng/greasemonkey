@@ -12,7 +12,6 @@
   "use strict";
 
   document.querySelector(".off-canvas-content .book-content").style.padding =
-    "0rem !important";
-  document.querySelector(".off-canvas-content").style.padding =
-    "0rem !important";
+    "0rem";
+  document.querySelector(".off-canvas-content").style.padding = "0rem";
 })();
