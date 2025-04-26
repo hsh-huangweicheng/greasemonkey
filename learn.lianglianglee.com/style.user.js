@@ -1,26 +1,18 @@
 // ==UserScript==
-// @name         style.user.js
-// @namespace    http://tampermonkey.net/
-// @version      2025.04.26
+// @name         New Userscript
+// @namespace    https://viayoo.com/
+// @version      0.1
 // @description  try to take over the world!
 // @author       You
+// @run-at       document-end
 // @match        https://learn.lianglianglee.com/*
 // @grant        none
 // ==/UserScript==
-
 (function () {
   "use strict";
 
-  const styleElement = document.createElement("style");
-
-  const cssRules = `
-    .off-canvas-content .book-content,.off-canvas-content {
-        margin: 0rem !important;
-        padding:0rem !important;
-    }
-`;
-
-  styleElement.textContent = cssRules;
-
-  document.head.appendChild(styleElement);
+  document.querySelector(".off-canvas-content .book-content").style.padding =
+    "0rem !important";
+  document.querySelector(".off-canvas-content").style.padding =
+    "0rem !important";
 })();
